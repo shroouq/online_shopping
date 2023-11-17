@@ -1,0 +1,316 @@
+
+.App {
+  text-align: center;
+  
+}
+
+*{
+  box-sizing: border-box;
+
+}
+
+.img {
+  border: 0;
+}
+.footer{
+  background-color:rgb(107, 107, 112);
+  padding: 2em;
+  height: 300px;
+  display: flex;
+  align-items:stretch ;
+ }
+.footer .container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+.label {
+  padding: 20px 20px;
+  width: 50%;
+
+}
+
+.first p{
+  text-align: center;
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.first i{
+  height:80px;
+  width: 80px;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 80px;
+  background-color: #574c4c;
+  border-radius: 50%;
+}
+
+.second h3{
+  font-size: 30px;
+}
+.second i{
+  font-size: 2.55rem;
+  text-align: center;
+  line-height: 80px;
+}
+
+.second i {
+  padding: 20px;
+}
+
+.best{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  margin-left: 270px;
+  margin-right: 200px;
+}
+
+.image1{
+  height: 200px;
+  width: 200px;
+  border-radius: 2rem;
+  padding: 5px;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+nav{
+ 
+  margin: 0 auto;
+  padding: 0 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  height: 60px;
+  position: relative;
+  z-index: 99;
+
+}
+
+.a:hover{
+  text-decoration: overline;
+}
+.a {
+  font-size: 20px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration:dotted;
+}
+.b{
+  font-size: 40px;
+  font-weight: 400;
+  color: #2f234f;
+  text-decoration:wavy;
+  font-style: italic;
+}
+
+.circle{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display:inline-block;
+  border-style:solid;
+  background-color: white;
+
+}
+.circle2{
+  display:inline-block;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: red;
+  transform: translate(-50% , 30% );
+  }
+ 
+.b::first-letter { 
+
+  color:black;
+  
+  font-size: 1.3em; 
+  
+  font-weight: bold; 
+  
+  line-height: 1; 
+  
+  }  
+
+
+
+
+.image{
+  height: 350px;
+  width: 170ex;
+  object-fit: cover;
+  
+}
+
+.title{
+  display:flex;
+  justify-content: space-between;
+  margin: 20px;
+  font-size:20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+
+}
+
+.ani{
+  font-size: 50px;
+  text-align: center;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color:#2f234f;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  0%   {color:red;}
+  25%  {color:yellow; }
+  50%  {color:blue;}
+  75%  {color:green;}
+  100% {color:red;}
+}
+
+.last{
+  padding: 0px 35px;
+  overflow: hidden;
+  margin-left: 200px;
+  margin-right: 200px;
+  
+}
+
+
+
+.last .arrival{
+  font-size: 0px;
+  cursor: pointer;
+  white-space: nowrap;
+
+}
+.arrival{
+  display: flex;
+}
+
+.arrival img{
+  height: 240px;
+  object-fit:cover;
+  width: 200;
+
+}
+
+.last{
+  cursor: grab;
+  overflow: hidden;
+}
+
+.arrival{
+  display: flex;
+}
+
+
+.item{
+min-height: 1.5rem;
+min-width: 15rem;
+padding: 40px 20px;
+
+ }
+
+.item img{
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+ }
+
+.order{
+  background-color :rgb(54, 54, 54);
+  color : white;
+  width: 100px;
+  height:50px;
+  margin-left : 90px;
+}
+.popup {
+  margin: auto;
+  background: rgb(243, 239, 239);
+  width: 300px;
+  height: 300px;
+}
+
+.parent{
+  display: grid;
+  grid-template-columns: (12. 1fr);
+
+}
+.segment{
+  display: grid;
+  place-items: center;
+  text-align: center;
+  grid-template-rows: 500px;
+}
+
+.eight{
+  grid-column: 1/ span 6;
+    
+}
+
+.four{
+  grid-column: 7/ span 4;
+  background-color: lightblue;
+}
+
+.product-img{
+  height: 400px;
+}
+
+.addbutton{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  flex-direction: column;
+}
+
+.addbutton2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+}
+.remove{
+  background-color: rgb(187, 23, 23);
+  height:30px;
+  width:80px;
+  border-radius: .9ch;
+}
+.addbutton2 button{
+  background-color: rgb(41, 41, 182);
+  width:35px;
+  height:30px;
+  font-size: 15;
+  border-radius: 1ch;
+ }
+.quan{
+  font-size: medium;
+  font-style: italic;
+  font-size: 20px;
+}
+
+.addcart {
+  background-color: rgb(41, 41, 182);
+  width:180px;
+  height:40px;
+  font-size: 15;
+  font-style: italic;
+  font-size: 20px;
+  border-radius:.9ch;
+}
